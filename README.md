@@ -47,7 +47,7 @@ The skill keeps these items exactly as they are:
 
 ## Example
 
-This example shows a tool description for an AI agent, at the strict level. The tool schema gives the names `find_orders`, `customer_id`, `email` and `next_page`, the time of 10 seconds and the limit of 50 orders.
+This example shows a tool description for an AI agent, at the strict level.
 
 <!-- ste-ignore-start -->
 Before:
@@ -57,11 +57,11 @@ Before:
 
 After:
 
-> The `find_orders` tool finds the orders of one customer.
+> This tool finds orders.
 >
-> - If you know the customer ID, give `customer_id`.
-> - If you do not know the customer ID, give `email`. The search by `email` takes up to 10 seconds.
-> - The tool returns a maximum of 50 orders. If the reply contains `next_page`, call the tool again with that value.
+> - If you know the customer ID, give the customer ID.
+> - If you do not give the customer ID, the tool searches by email address. This search is sometimes slow.
+> - The tool sometimes returns the results on more than one page.
 
 ## Install the skill
 

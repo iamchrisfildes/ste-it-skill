@@ -196,18 +196,16 @@ After:
 
 **Tool description (strict level, an agent reads it)**
 
-The tool schema gives the names `find_orders`, `customer_id`, `email` and `next_page`, the time of 10 seconds and the limit of 50 orders.
-
 <!-- ste-ignore-start -->
 Before:
 > Use this to look up orders. You should pass the customer ID if you have it, otherwise it'll fall back to searching by email, which may be slow. Results might be paginated.
 <!-- ste-ignore-end -->
 
 After:
-> The `find_orders` tool finds the orders of one customer.
-> - If you know the customer ID, give `customer_id`.
-> - If you do not know the customer ID, give `email`. The search by `email` takes up to 10 seconds.
-> - The tool returns a maximum of 50 orders. If the reply contains `next_page`, call the tool again with that value.
+> This tool finds orders.
+> - If you know the customer ID, give the customer ID.
+> - If you do not give the customer ID, the tool searches by email address. This search is sometimes slow.
+> - The tool sometimes returns the results on more than one page.
 
 **Task list (style layer on a planning task)**
 
