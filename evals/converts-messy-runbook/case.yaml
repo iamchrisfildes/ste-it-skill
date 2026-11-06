@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: converts-messy-runbook
+expected_outcome: |
+  runbook-ste.md keeps the meaning of runbook.md. Instructions are numbered imperative steps with one
+  action each and conditions first. The warning about prod and #inventory-oncall starts with a command
+  and then gives the reason. Idioms and phrasal verbs are gone. Every command, path, URL, bucket,
+  deployment name, namespace, env var and channel name is unchanged.
+context:
+  scaffold_script: place-files.sh

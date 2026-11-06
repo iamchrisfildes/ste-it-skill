@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: spec-keeps-rfc-keywords
+expected_outcome: |
+  spec.md has exactly the four requested sections in order. Requirements use MUST, SHOULD and MAY in
+  capitals with their RFC 2119 meanings. Prose follows STE. Identifiers such as /v1/orders,
+  RateLimits:Overrides, Retry-After, /health and /ready are unchanged. No STE change notes are added.

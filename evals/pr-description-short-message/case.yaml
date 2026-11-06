@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: pr-description-short-message
+expected_outcome: |
+  pr.md is a short PR description: what changed, why, and how it was tested. Sentences are short and
+  active, with no idioms or contractions. InvoiceDateFormatter, DateTime.Now, TimeProvider and
+  TimeZoneId are unchanged. It stays proportionate to a small bug fix.

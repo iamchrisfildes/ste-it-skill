@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: agent-instructions-strict
+expected_outcome: |
+  claude-section.md keeps the heading "Database migrations" and the meaning of the original. Each
+  instruction is an imperative or a "must" requirement. Lowercase "should", "may", "might", "ideally"
+  and contractions are gone. The optional SQL review is a clear option ("can" or an "Optional:" label). The migrations folder has one name.
+  No paragraph starts with "It". The commands, the path src/Orders.Data and ORDERS_DB_CONNECTION are
+  unchanged. The prohibition on staging and production starts with a command and then gives the
+  reason. The text does not claim compliance with ASD-STE100.

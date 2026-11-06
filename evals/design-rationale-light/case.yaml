@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: design-rationale-light
+expected_outcome: |
+  why-outbox.md explains the outbox design in prose paragraphs at the light level. It keeps every
+  reason and trade-off from the notes: lost and phantom events, one transaction, 5-second polling,
+  extra latency, the extra table, duplicate sends with dedupe on MessageId, and the rejected MSDTC
+  option. It does not turn the explanation into numbered steps or commands. Technical names such as
+  OutboxMessages, OutboxPublisher, Service Bus, SaveChanges and MessageId are unchanged. Sentence
+  rules apply: no sentence over 25 words, no contractions, no lowercase "should", and each paragraph
+  names its subject.
