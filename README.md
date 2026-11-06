@@ -47,7 +47,7 @@ The skill keeps these items exactly as they are:
 
 ## Example
 
-This example shows a tool description for an AI agent, at the strict level.
+This example shows a tool description for an AI agent, at the strict level. The tool schema gives the names `find_orders`, `customer_id`, `email` and `next_page`, the time of 10 seconds and the limit of 50 orders.
 
 <!-- ste-ignore-start -->
 Before:

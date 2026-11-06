@@ -109,13 +109,14 @@ An AI agent is a reader that cannot ask a question. The agent reads the words, c
 ### Words
 
 - **Use one word for one meaning.** In a document, give each word only one meaning, and use only one word for each thing. If you call it "the config file" one time, do not call it "the settings file" later. A non-native reader thinks that two words are two different things. A search tool does not find the paragraphs that use the other word.
-- **For a long document, make a glossary before you write.** Do this if the document has more than about 1,000 words or more than 5 technical names. For each important thing, write the one word that you will use and the words that you will not use: "config file (not: settings file, configuration)". Use this glossary when you write and when you check. Do not add the glossary to the document, unless the template has a glossary section or the user asks for one.
+- **For a long document, make a glossary before you write.** Do this if the document has more than about 1,000 words or more than 5 technical names. For each important thing, write the one word that you will use and the words that you will not use: "config file (not: settings file)". Use this glossary when you write and when you check. Do not add the glossary to the document, unless the template has a glossary section or the user asks for one.
 - **Use the simple, common word.** Write "use", not "utilize". Write "start", not "initiate". Write "help", not "facilitate". The file `references/word-list.md` has the full list. Read it when you need a replacement word or when you check a long document.
 - **Do not use phrasal verbs if a single verb has the same meaning.** Write "start", not "fire up". Write "find", not "find out". Write "remove", not "get rid of". Phrasal verbs are difficult for non-native readers and for machine translation. A phrasal verb that is the technical name of an action is acceptable, such as "log in" or "roll back". Use it the same way each time.
 - **Do not use idioms, slang or metaphors**, such as "out of the box", "under the hood" or "low-hanging fruit". Write the fact that the idiom stands for.
 - **Do not use "-ing" words if a different form is possible.** Write "Before you deploy", not "Before deploying". An "-ing" word can be a noun, an adjective or a verb, so its meaning is less clear. Technical names that end in "-ing" are acceptable, such as "logging", "routing" and "caching".
 - **Do not use more than three nouns in a row.** "The payments API base URL configuration value" is difficult to read. Write "the value of the payments API base URL setting", or give the key.
 - **Use exact words for quantity and time.** Write "in 2 hours", not "soon". Write "3 retries", not "a few retries". If you know the number, write "all 67 cases", not "most cases".
+- **Do not add facts.** Take each number, name and limit from the source text, the code or the user. If you do not have the value, ask the user. If you cannot ask, keep the meaning without a number: "The search by email is slower than the search by customer ID."
 - **Do not use "should" in an instruction.** The word can mean "must", "it is a good idea to" or "it is probably true that". Use "must" for a requirement, the imperative for an instruction and "can" for an option. The exception is a spec that defines SHOULD (see "What you must not change").
 
 ### Technical names and technical verbs
@@ -194,6 +195,8 @@ After:
 > The gateway receives each request and sends it to the old service or to the new service. A weight for each route sets the percentage of requests that go to each one. When comparison is on, the gateway also sends the request to the old service and compares the two replies. This shows differences before more traffic moves to the new service.
 
 **Tool description (strict level, an agent reads it)**
+
+The tool schema gives the names `find_orders`, `customer_id`, `email` and `next_page`, the time of 10 seconds and the limit of 50 orders.
 
 <!-- ste-ignore-start -->
 Before:
