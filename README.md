@@ -18,7 +18,7 @@ STE removes the most frequent causes of an incorrect reading:
 
 - Long sentences with more than one topic
 - Words with more than one meaning, such as "should"
-- Two different names for one thing, such as "gateway" and "proxy"
+- Two different names for one thing, such as "config file" and "settings file"
 - Idioms, phrasal verbs and vague quantities, such as "soon" or "a few"
 
 ## What the skill does
