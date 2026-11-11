@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logo.svg" alt="STE-it" width="600"></p>
+<p align="center"><img src="assets/banner.png" alt="STE-It! Write In Simplified Technical English"></p>
 
 # STE-it: Simplified Technical English skill for AI agents
 
@@ -166,7 +166,7 @@ SKILL.md                 Instructions for the agent
 references/word-list.md  Words to replace, and the replacements
 scripts/check_ste.py     Checker script
 evals/                   Test cases
-assets/logo.svg          Logo
+assets/banner.png        Banner image
 ```
 
 ## Limits of the skill
